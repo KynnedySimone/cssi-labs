@@ -3,6 +3,7 @@ const getMessages = () => {
     messagesRef.on('value', (snapshot) => {
     const data = snapshot.val();
     findMessage(data);
+    console.log();
     });
 }
 
